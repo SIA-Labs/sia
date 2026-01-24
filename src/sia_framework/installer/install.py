@@ -261,7 +261,8 @@ class SIAInstaller:
         templates_dst = self.sia_dir / "templates"
         templates_dst.mkdir(parents=True, exist_ok=True)
         # Copy specific templates (not prompts or skills, those are already handled)
-        for template_name in ["PROJECT_SPR.template.md", "DEFAULT_STACK.md", "INIT_REQUIRED.template.md"]:
+        # Note: INIT_REQUIRED.template.md is already copied as .sia/INIT_REQUIRED.md
+        for template_name in ["PROJECT_SPR.template.md", "DEFAULT_STACK.md"]:
             if self._resource_exists("templates", template_name):
                 self._copy_resource(("templates", template_name), templates_dst / template_name)
         print("   ✅ Reference templates installed")
