@@ -58,7 +58,7 @@ cp templates/prompts/*.prompt.md .sia/prompts/
 | `/spr`               | `spr.prompt.md`               | Compress content with SPR technique                   |
 | `/quant`             | `quant.prompt.md`             | Generate QUANT tasks breakdown                        |
 | `/boost`             | `boost.prompt.md`             | Reinforce powers mid-session                          |
-| `/read`              | `read.prompt.md`              | Extract text from DOCX, XLSX, PDF                     |
+| `/file`              | `file.prompt.md`              | Read DOCX, XLSX, PDF with file reader skills          |
 
 ---
 
